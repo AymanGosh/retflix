@@ -1,7 +1,12 @@
 import "./App.css";
-
+import Row from "./Components/Row";
 function App() {
-  return <div>66</div>;
+  return (
+    <div className="App">
+      <Row title="NETFLIX ORIGINALS" />
+      <Row title="Trending Now" />
+    </div>
+  );
 }
 
 export default App;
