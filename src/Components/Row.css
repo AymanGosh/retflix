@@ -1,6 +1,6 @@
-/* .row {
+.row {
   margin-left: 20px;
-} */
+}
 
 .row_posters {
   display: flex;
@@ -13,22 +13,20 @@
   display: none;
 } */
 
-/* .row_posterLarge {
-  max-height: 250px;
-} */
-
 .row_poster {
   width: 100%;
   object-fit: contain;
-  max-height: 200px;
+  max-height: 100px;
   margin-right: 10px;
   transition: transform 500ms;
 }
-
 .row_poster:hover {
   transform: scale(1.08);
 }
 
-/* .row_posterLarge:hover {
+.row_posterLarge {
+  max-height: 250px;
+}
+.row_posterLarge:hover {
   transform: scale(1.09);
-} */
+}
