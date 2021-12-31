@@ -3,8 +3,12 @@
   top: 0;
   width: 100%;
   padding: 20px;
+  height: 15px;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
+  background-color: #111;
 }
 .nav_logo {
   position: fixed;

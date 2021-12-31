@@ -2,6 +2,13 @@ import React from "react";
 import "./Nav.css";
 
 function Nav() {
+  useEffect(() => {
+    effect;
+    return () => {
+      cleanup;
+    };
+  }, []);
+
   return (
     <div className="nav">
       <img
