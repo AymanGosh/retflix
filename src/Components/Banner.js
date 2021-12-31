@@ -8,15 +8,16 @@ function Banner() {
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchNetflixOriginals);
+      let rand = Math.floor(Math.random() * 10);
 
-      setMovie(request.data.results[0]);
+      setMovie(request.data.results[rand]);
       return request;
     }
     fetchData();
   }, []);
 
-  function truncate(str, n) {
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  function truncate(str, numChar) {
+    return str?.length > numChar ? str.substr(0, numChar - 1) + "..." : str;
   }
 
   return (
@@ -40,7 +41,7 @@ function Banner() {
           <button className="banner_button">My List</button>
         </div>
 
-        <h1 className="banner_description">{movie?.overview}</h1>
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
     </header>
   );
