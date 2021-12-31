@@ -8,6 +8,11 @@
 
   display: flex;
   justify-content: space-between;
+  /* background-color: #111; */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav_black {
   background-color: #111;
 }
 .nav_logo {
